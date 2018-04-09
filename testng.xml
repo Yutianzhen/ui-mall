@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Default Suite">
+    <test name="simulatorclass">
+        <!--   -->
+        <groups>
+            <run>
+                <!--
+                <include name="offcia" />
+                 -->
+                <!--   -->
+                <include name="mall" />
+
+            </run>
+        </groups>
+
+        <classes>
+            <!-- 官网 -->
+            <class name="cn.okay.officialwebsitetest.secondpagetest.HomeToSecondPageTest"/>
+            <class name="cn.okay.officialwebsitetest.secondpagetest.ParentSecondPageTest"/>
+            <class name="cn.okay.officialwebsitetest.secondpagetest.TrainingInstitutionPageTest"/>
+            <class name="cn.okay.officialwebsitetest.otherlevelpagetest.ThirdPageTest"/>
+            <class name="cn.okay.officialwebsitetest.otherlevelpagetest.FourthPageTest"/>
+
+            <!-- 商城 -->
+            <class name="cn.okay.mallpcpagetest.loginbeforetest.MallHomePageTest" />
+            <class name="cn.okay.mallpcpagetest.loginbeforetest.MallLoginTest" />
+            <class name="cn.okay.mallpcpagetest.parsmoudletest.PartsClassificationPageTest" />
+            <class name="cn.okay.mallpcpagetest.parsmoudletest.PartsDetailPageTest" />
+            <class name="cn.okay.mallpcpagetest.parsmoudletest.HeadsetPageTest" />
+            <class name="cn.okay.mallpcpagetest.shopmoudle.OrderInformationPageTest" />
+            <class name="cn.okay.mallpcpagetest.shopmoudle.PayPageTest" />
+            <class name="cn.okay.mallpcpagetest.shopmoudle.ShopCarPageTest" />
+
+        </classes>
+
+    </test> <!-- simulatorclass -->
+    <listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter" />
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+        <listener class-name="cn.okay.tools.MyTestNGListener" />
+    </listeners>
+</suite> <!-- Default Suite -->
