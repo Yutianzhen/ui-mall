@@ -99,6 +99,7 @@
                     <!--指定testng.xml的位置-->
                     <suiteXmlFiles>
                         <file>testng.xml</file>
+                        <file>testngmall.xml</file>
                     </suiteXmlFiles>
                     <workingDirectory>target/</workingDirectory>
                 </configuration>

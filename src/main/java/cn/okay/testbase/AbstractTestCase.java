@@ -4,7 +4,7 @@ import cn.okay.tools.ConfigUtil;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-
+import org.testng.annotations.Parameters;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -15,11 +15,12 @@ public class AbstractTestCase {
     public static WebDriver driver=null;
     private static String broswerType;
     private static int defaultTimeOut=30;
-    private String url;
+//    private String url;
 
+    @Parameters({"url"})
     @BeforeMethod(alwaysRun = true)
-    public void initDriver() throws Exception {
-        url= ConfigUtil.getConfigUtil().getConfigFileContent("url");
+    public void initDriver(String url) throws Exception {
+     //   url= ConfigUtil.getConfigUtil().getConfigFileContent("url");
         System.out.println("Current Driver is null : " + (driver == null));
         driver = creatNewDriver();
         driver.manage().timeouts().implicitlyWait(defaultTimeOut, TimeUnit.SECONDS);

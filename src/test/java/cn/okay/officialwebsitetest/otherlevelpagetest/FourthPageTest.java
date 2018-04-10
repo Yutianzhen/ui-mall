@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
  */
 public class FourthPageTest extends AbstractTestCase {
 
-    @Test(testName = "FourthPageTest1",description = "点击推荐文章的第一篇文章",groups = "offcia")
+    @Test(testName = "FourthPageTest1",description = "点击推荐文章的第一篇文章",groups = "offcial")
     public void clickFirstRecommendMoudleToOtherRecommend() throws Exception {
         OffciaHomePage offciaHomePage =new OffciaHomePage(driver);
         ParentPage parentPage= offciaHomePage.clickToParentPage();
@@ -21,7 +21,7 @@ public class FourthPageTest extends AbstractTestCase {
         fourthPage=fourthPage.clickFirstRecommendMoudle();
     }
 
-    @Test(testName = "FourthPageTest2",description = "点击导航链接进入首页",groups = "offcia")
+    @Test(testName = "FourthPageTest2",description = "点击导航链接进入首页",groups = "offcial")
     public void clickFirstBarToHomePage() throws Exception {
         OffciaHomePage offciaHomePage =new OffciaHomePage(driver);
         ParentPage parentPage= offciaHomePage.clickToParentPage();
@@ -30,7 +30,7 @@ public class FourthPageTest extends AbstractTestCase {
         offciaHomePage =fourthPage.clickFirstBarBtnToHomePage();
     }
 
-    @Test(testName = "FourthPageTest3",description = "页面滑动到底部后点击回到顶部按钮",groups = "offcia")
+    @Test(testName = "FourthPageTest3",description = "页面滑动到底部后点击回到顶部按钮",groups = "offcial")
     public void clickToPageTop() throws Exception {
         OffciaHomePage offciaHomePage =new OffciaHomePage(driver);
         ParentPage parentPage= offciaHomePage.clickToParentPage();

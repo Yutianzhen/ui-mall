@@ -66,6 +66,7 @@ public class AbstractPage {
 
     //鼠标悬停当前元素
     protected void moveToElement(WebDriver driver,WebElement element){
+        isDisplayed(element);
         Actions actions=new Actions(driver);
         actions.moveToElement(element).perform();
         pageWait(2000);

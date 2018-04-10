@@ -12,35 +12,35 @@ import org.testng.annotations.Test;
  */
 public class TrainingInstitutionPageTest extends AbstractTestCase {
 
-    @Test(testName = "TrainingInstitutionPage1",description = "机构页点击OKAY优势按钮",groups = "offcia")
+    @Test(testName = "TrainingInstitutionPage1",description = "机构页点击OKAY优势按钮",groups = "offcial")
     public void clickoOkayAdvantageBtn() throws Exception {
         OffciaHomePage offciaHomePage =new OffciaHomePage(driver);
         TrainingInstitutionPage trainingInstitutionPage= offciaHomePage.clickToTrainingInstitutionPage();
         WebElement element=trainingInstitutionPage.clickokayAdvantage();
     }
 
-    @Test(testName = "TrainingInstitutionPage2",description = "机构页点击合作机构按钮",groups = "offcia")
+    @Test(testName = "TrainingInstitutionPage2",description = "机构页点击合作机构按钮",groups = "offcial")
     public void clickTrainingInstitutionBtn() throws Exception {
         OffciaHomePage offciaHomePage =new OffciaHomePage(driver);
         TrainingInstitutionPage trainingInstitutionPage= offciaHomePage.clickToTrainingInstitutionPage();
         WebElement expectElement=trainingInstitutionPage.clickPartner();
     }
 
-    @Test(testName = "TrainingInstitutionPage3",description = "鼠标悬停在OKAY优势模块的第一个模块上",groups = "offcia")
+    @Test(testName = "TrainingInstitutionPage3",description = "鼠标悬停在OKAY优势模块的第一个模块上",groups = "offcial")
     public void mouseHoverAdvantage() throws Exception {
         OffciaHomePage offciaHomePage =new OffciaHomePage(driver);
         TrainingInstitutionPage trainingInstitutionPage= offciaHomePage.clickToTrainingInstitutionPage();
         trainingInstitutionPage.hoverFirstAdvantage();
     }
 
-    @Test(testName = "TrainingInstitutionPage4",description = "鼠标悬停在朗文教育上并进入对应详情页",groups = "offcia")
+    @Test(testName = "TrainingInstitutionPage4",description = "鼠标悬停在朗文教育上并进入对应详情页",groups = "offcial")
     public void clickToTrainingInstitutionDetailPage() throws Exception {
         OffciaHomePage offciaHomePage =new OffciaHomePage(driver);
         TrainingInstitutionPage tip= offciaHomePage.clickToTrainingInstitutionPage();
         TrainingInstitutionDetailPage tidp=tip.clickToTrainingInstitutionDetailPage();
     }
 
-    @Test(testName = "TrainingInstitutionPage5",description = "详情页点击学校的机构展示图片",groups = "offcia")
+    @Test(testName = "TrainingInstitutionPage5",description = "详情页点击学校的机构展示图片",groups = "offcial")
     public void clickShowImg() throws Exception {
         OffciaHomePage offciaHomePage =new OffciaHomePage(driver);
         TrainingInstitutionPage tip= offciaHomePage.clickToTrainingInstitutionPage();

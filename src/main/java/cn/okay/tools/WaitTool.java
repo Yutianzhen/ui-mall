@@ -1,5 +1,6 @@
 package cn.okay.tools;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -116,22 +117,13 @@ public class WaitTool {
                 try {
                     if(element.isDisplayed())
                         return true;
-                    throw new NoFindWebElement("Can't find that page webelement!!!");
-                } catch (NoFindWebElement e) {
+                } catch (Exception e) {
                     e.printStackTrace();
+                    Logger.getLogger(this.getClass()).error("Can't find that page webelement!!!");
                 }
                 return false;
             }
         },timeOutSeconds);
     }
 
-    public static class NoFindWebElement extends Exception{
-
-        public NoFindWebElement(){
-            super();
-        }
-        public NoFindWebElement(String message){
-            super(message);
-        }
-    }
 }

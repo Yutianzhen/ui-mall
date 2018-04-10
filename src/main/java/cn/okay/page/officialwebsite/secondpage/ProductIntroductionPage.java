@@ -2,6 +2,7 @@ package cn.okay.page.officialwebsite.secondpage;
 
 import cn.okay.testbase.AbstractPage;
 import cn.okay.tools.WaitTool;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
