@@ -2,6 +2,7 @@ package cn.okay.page.okaymall.loginbefore;
 
 import cn.okay.page.officialwebsite.OffciaHomePage;
 import cn.okay.page.okaymall.partsmoudle.PartsClassificationPage;
+import cn.okay.page.okaymall.shopmoudle.MyOrderPage;
 import cn.okay.page.okaymall.shopmoudle.ShopCarPage;
 import cn.okay.testbase.AbstractPage;
 import cn.okay.tools.WaitTool;
@@ -117,4 +118,8 @@ public class MallHomePage extends AbstractPage {
         return click(shopCarBtn,ShopCarPage.class);
     }
 
+    public MyOrderPage homePageToMyOrderPage() throws Exception {
+        moveToElement(driver,userBtn);
+        return click(myOrder,MyOrderPage.class);
+    }
 }

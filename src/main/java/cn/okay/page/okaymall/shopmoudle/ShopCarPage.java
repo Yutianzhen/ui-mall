@@ -26,7 +26,7 @@ public class ShopCarPage extends AbstractPage {
 
     //删除弹框的确定按钮
     @FindBy(css = "a[class='dl-confirm btn fis-btn']")
-    WebElement determineBtn;
+    WebElement deletermineBtn;
 
     public ShopCarPage(WebDriver driver) {
         super(driver);
@@ -34,8 +34,8 @@ public class ShopCarPage extends AbstractPage {
     }
 
     public void deleteFirstCommodity(){
-        click(deleteBtn,determineBtn);
-        click(determineBtn,shopCarDiv);
+        click(deleteBtn,deletermineBtn);
+        click(deletermineBtn,shopCarDiv);
     }
 
     public OrderInformationPage goOrderInformationPage() throws Exception {
