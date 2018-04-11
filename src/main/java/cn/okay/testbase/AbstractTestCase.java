@@ -15,12 +15,12 @@ public class AbstractTestCase {
     public static WebDriver driver=null;
     private static String broswerType;
     private static int defaultTimeOut=30;
-//    private String url;
+    private String url;
 
     @Parameters({"url"})
     @BeforeMethod(alwaysRun = true)
     public void initDriver(String url) throws Exception {
-     //   url= ConfigUtil.getConfigUtil().getConfigFileContent("url");
+//        url= ConfigUtil.getConfigUtil().getConfigFileContent("url");
         System.out.println("Current Driver is null : " + (driver == null));
         driver = creatNewDriver();
         driver.manage().timeouts().implicitlyWait(defaultTimeOut, TimeUnit.SECONDS);
