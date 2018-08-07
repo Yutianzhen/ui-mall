@@ -43,6 +43,7 @@ public class AbstractTestCase {
     @AfterMethod(alwaysRun = true)
     public void destoryDriver(){
         System.out.println("End Test Page Title="+driver.getTitle());
+        driver.close();
         driver.quit();
         driver=null;
         System.out.println("----------------End  Test------------------");

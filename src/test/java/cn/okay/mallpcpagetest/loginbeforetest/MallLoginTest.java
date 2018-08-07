@@ -38,12 +38,14 @@ public class MallLoginTest extends AbstractTestCase {
         loginToolMallPage.passwordErr();
     }
 
-    @Test(testName = "testLogin5",description = "登录框填写不存在的手机号,报错后进入注册页面",groups = "mall")
+    /*
+    经验证，此case已经没有了
+    @Test(testName = "testLogin5",description = "登录框填写不存在的手机号,报错后进入注册页面",groups = "mall1")
     public void loginUsernameErr() throws Exception {
         LoginToolMallPage loginToolMallPage=new LoginToolMallPage(driver);
         RegisterPage registerPage=loginToolMallPage.usernameErr();
     }
-
+*/
     @Test(testName = "testLogin6",description = "用户菜单处点击注册按钮",groups = "mall")
     public void menuToRegisterPageTest() throws Exception {
         LoginToolMallPage loginToolMallPage=new LoginToolMallPage(driver);

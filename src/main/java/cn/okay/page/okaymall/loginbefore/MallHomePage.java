@@ -46,7 +46,7 @@ public class MallHomePage extends AbstractPage {
     @FindBy(css = ".clearfix a[href='/index.php?m=OkayMall&c=Goods&a=accessoriescate']")
     WebElement partsMoudle;
 
-    @FindBy(css = ".clearfix a[href='/index.php?m=OkayMall&c=Goods&a=getMainOkaypad&goodId=127']")
+    @FindBy(css = ".clearfix a[href='/index.php?m=OkayMall&c=Goods&a=getMainOkaypad&goodId=207']")
     WebElement terminalStudentBtn;
 
     @FindBy(css = ".clearfix a[href='/index.php?m=OkayMall&c=Goods&a=getMainOkaypad&goodId=130']")
