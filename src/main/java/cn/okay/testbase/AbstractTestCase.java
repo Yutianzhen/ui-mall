@@ -17,10 +17,10 @@ public class AbstractTestCase {
     private static int defaultTimeOut=30;
     private String url;
 
-    @Parameters({"url"})
+//    @Parameters({"url"})
     @BeforeMethod(alwaysRun = true)
-    public void initDriver(String url) throws Exception {
-//        url= ConfigUtil.getConfigUtil().getConfigFileContent("url");
+    public void initDriver() throws Exception {
+        url= ConfigUtil.getConfigUtil().getConfigFileContent("url");
         System.out.println("Current Driver is null : " + (driver == null));
         driver = creatNewDriver();
         driver.manage().timeouts().implicitlyWait(defaultTimeOut, TimeUnit.SECONDS);

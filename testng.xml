@@ -6,8 +6,13 @@
     <!--   -->
     <groups>
         <run>
-            <!-- -->
+            <!--  商城的分组
+            <include name="mall" />
+            -->
+
+            <!-- 官网的分组 -->
             <include name="offcial" />
+
         </run>
     </groups>
 

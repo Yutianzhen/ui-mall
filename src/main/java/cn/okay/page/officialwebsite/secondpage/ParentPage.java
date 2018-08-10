@@ -17,7 +17,7 @@ public class ParentPage extends AbstractPage {
     WebElement parentElement;
 
     //家长页面的第一个关注模块
-    @FindBy(css="a[href='75.html']")
+    @FindBy(css="a[href='70.html']")
     WebElement firstModular;
 
     @FindBy(linkText = "首页")
