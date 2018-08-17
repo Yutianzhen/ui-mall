@@ -2,6 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Mall Suite">
     <test name="mall test">
+        <!-- 此处传入的是商城的位置 -->
         <parameter name="url" value="https://www.okay.cn" />
         <!--   -->
         <groups>

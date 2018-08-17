@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
         <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Offcia Suite">
-<test name="test offcia">
+<test name=" offcia test">
+    <!--  此处是传入的官网地址的参数 -->
     <parameter name="url" value="https://www.okayzhihui.com" />
-    <!--   -->
+
     <groups>
         <run>
             <!--  商城的分组
@@ -23,6 +24,17 @@
         <class name="cn.okay.officialwebsitetest.secondpagetest.TrainingInstitutionPageTest"/>
         <class name="cn.okay.officialwebsitetest.otherlevelpagetest.ThirdPageTest"/>
         <class name="cn.okay.officialwebsitetest.otherlevelpagetest.FourthPageTest"/>
+
+        <!-- 商城 -->
+        <class name="cn.okay.mallpcpagetest.loginbeforetest.MallHomePageTest" />
+        <class name="cn.okay.mallpcpagetest.loginbeforetest.MallLoginTest" />
+        <class name="cn.okay.mallpcpagetest.parsmoudletest.PartsClassificationPageTest" />
+        <class name="cn.okay.mallpcpagetest.parsmoudletest.PartsDetailPageTest" />
+        <class name="cn.okay.mallpcpagetest.parsmoudletest.HeadsetPageTest" />
+        <class name="cn.okay.mallpcpagetest.shopmoudle.OrderInformationPageTest" />
+        <class name="cn.okay.mallpcpagetest.shopmoudle.PayPageTest" />
+        <class name="cn.okay.mallpcpagetest.shopmoudle.ShopCarPageTest" />
+        <class name="cn.okay.mallpcpagetest.shopmoudle.MyOrderPageTest" />
     </classes>
 
 </test>

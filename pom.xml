@@ -96,9 +96,11 @@
                         </property>
                     </properties>
                     <testFailureIgnore>true</testFailureIgnore>
-                    <!--指定testng.xml的位置-->
+                    <!--指定需要测试的testng的配置文件的位置-->
                     <suiteXmlFiles>
+                        <!-- 这里是官网的测试文件配置 -->
                         <file>testng.xml</file>
+                        <!-- 这里是商城的测试文件配置 -->
                         <file>testngmall.xml</file>
                     </suiteXmlFiles>
                     <workingDirectory>target/</workingDirectory>
