@@ -10,7 +10,7 @@ import cn.okay.page.officialwebsite.secondpage.*;
  */
 public class HomeToSecondPageTest extends AbstractTestCase {
 
-    @Test(testName = "homePage1",description = "首页进入公司简介页",groups = "offcial")
+    @Test(testName = "homePage1",description = "首页进入公司简介页",groups = "offcial2")
     public void homePageToProfilePage() throws Exception {
         OffciaHomePage offciaHomePage =new OffciaHomePage(driver);
         CompanyProfilePage companyProfilePage= offciaHomePage.clickToCompanyProfilePage();

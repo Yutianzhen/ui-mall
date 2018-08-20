@@ -20,13 +20,13 @@ public class AbstractTestCase {
     @Parameters({"url"})
     @BeforeMethod(alwaysRun = true)
     public void initDriver(String url) throws Exception {
+        System.out.println("----------------Start Test-----------------");
 //        url= ConfigUtil.getConfigUtil().getConfigFileContent("url");
         System.out.println("Current Driver is null : " + (driver == null));
         driver = creatNewDriver();
         driver.manage().timeouts().implicitlyWait(defaultTimeOut, TimeUnit.SECONDS);
         driver.manage().window().maximize();
         driver.get(url);
-        System.out.println("----------------Start Test-----------------");
     }
 
     public static WebDriver creatNewDriver() throws Exception {

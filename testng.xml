@@ -12,7 +12,7 @@
             -->
 
             <!-- 官网的分组 -->
-            <include name="offcial" />
+            <include name="offcial2" />
 
         </run>
     </groups>
