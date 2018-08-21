@@ -6,14 +6,13 @@ import cn.okay.page.okaymall.partsmoudle.HeadsetPage;
 import cn.okay.page.okaymall.partsmoudle.PartsClassificationPage;
 import cn.okay.page.okaymall.partsmoudle.PartsDetailPage;
 import cn.okay.page.okaymall.shopmoudle.*;
-import cn.okay.testbase.AbstractTestCase;
-import org.openqa.selenium.WebElement;
+import cn.okay.testbase.MallAbstractTestCase;
 import org.testng.annotations.Test;
 
 /**
  * Created by yutz on 2018/4/10.
  */
-public class MyOrderPageTest extends AbstractTestCase {
+public class MyOrderPageTestMall extends MallAbstractTestCase {
 
     @Test(testName = "MyOrderPageTest1", description = "鼠标滑过第一个订单详情连接，出现订单详情介绍", groups = "mall")
     public void MoveToFirstDetaliLink() throws Exception {

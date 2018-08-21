@@ -1,6 +1,6 @@
 package cn.okay.mallpcpagetest.loginbeforetest;
 
-import cn.okay.testbase.AbstractTestCase;
+import cn.okay.testbase.MallAbstractTestCase;
 import org.testng.annotations.Test;
 import cn.okay.page.officialwebsite.OffciaHomePage;
 import cn.okay.page.okaymall.loginbefore.*;
@@ -11,7 +11,7 @@ import cn.okay.page.okaymall.shopmoudle.ShopCarPage;
 /**
  * Created by yutz on 2018/2/28.
  */
-public class MallHomePageTest extends AbstractTestCase {
+public class MallHomePageTestMall extends MallAbstractTestCase {
 
     @Test(testName = "mallHomePageTest1",description = "商城首页进入配件页",groups = "mall")
     public void clickPartsLink() throws Exception {

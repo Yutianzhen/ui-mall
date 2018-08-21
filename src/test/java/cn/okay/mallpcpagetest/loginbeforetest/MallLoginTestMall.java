@@ -4,7 +4,7 @@ import cn.okay.page.okaymall.loginbefore.LoginToolMallPage;
 import cn.okay.page.okaymall.loginbefore.MallHomePage;
 import cn.okay.page.okaymall.loginbefore.RegisterPage;
 import cn.okay.page.okaymall.loginbefore.ResetPasswordPage;
-import cn.okay.testbase.AbstractTestCase;
+import cn.okay.testbase.MallAbstractTestCase;
 import org.testng.annotations.Test;
 
 
@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 /**
  * Created by yutz on 2018/2/27.
  */
-public class MallLoginTest extends AbstractTestCase {
+public class MallLoginTestMall extends MallAbstractTestCase {
 
     @Test(testName = "testLogin1",description = "登录后进入商城首页",groups = "mall")
     public void loginTest() throws Exception {

@@ -7,34 +7,33 @@
 
     <groups>
         <run>
-            <!--  商城的分组
+            <!--  商城的分组 -->
             <include name="mall" />
-            -->
 
             <!-- 官网的分组 -->
-            <include name="offcial2" />
+            <include name="offcial" />
 
         </run>
     </groups>
 
     <classes>
         <!-- 官网 -->
-        <class name="cn.okay.officialwebsitetest.secondpagetest.HomeToSecondPageTest"/>
-        <class name="cn.okay.officialwebsitetest.secondpagetest.ParentSecondPageTest"/>
-        <class name="cn.okay.officialwebsitetest.secondpagetest.TrainingInstitutionPageTest"/>
-        <class name="cn.okay.officialwebsitetest.otherlevelpagetest.ThirdPageTest"/>
-        <class name="cn.okay.officialwebsitetest.otherlevelpagetest.FourthPageTest"/>
+        <class name="cn.okay.officialwebsitetest.secondpagetest.HomeToSecondPageTestMall"/>
+        <class name="cn.okay.officialwebsitetest.secondpagetest.ParentSecondPageTestMall"/>
+        <class name="cn.okay.officialwebsitetest.secondpagetest.TrainingInstitutionPageTestMall"/>
+        <class name="cn.okay.officialwebsitetest.otherlevelpagetest.ThirdPageTestMall"/>
+        <class name="cn.okay.officialwebsitetest.otherlevelpagetest.FourthPageTestMall"/>
 
         <!-- 商城 -->
-        <class name="cn.okay.mallpcpagetest.loginbeforetest.MallHomePageTest" />
-        <class name="cn.okay.mallpcpagetest.loginbeforetest.MallLoginTest" />
-        <class name="cn.okay.mallpcpagetest.parsmoudletest.PartsClassificationPageTest" />
-        <class name="cn.okay.mallpcpagetest.parsmoudletest.PartsDetailPageTest" />
-        <class name="cn.okay.mallpcpagetest.parsmoudletest.HeadsetPageTest" />
-        <class name="cn.okay.mallpcpagetest.shopmoudle.OrderInformationPageTest" />
-        <class name="cn.okay.mallpcpagetest.shopmoudle.PayPageTest" />
-        <class name="cn.okay.mallpcpagetest.shopmoudle.ShopCarPageTest" />
-        <class name="cn.okay.mallpcpagetest.shopmoudle.MyOrderPageTest" />
+        <class name="cn.okay.mallpcpagetest.loginbeforetest.MallHomePageTestMall" />
+        <class name="cn.okay.mallpcpagetest.loginbeforetest.MallLoginTestMall" />
+        <class name="cn.okay.mallpcpagetest.parsmoudletest.PartsClassificationPageTestMall" />
+        <class name="cn.okay.mallpcpagetest.parsmoudletest.PartsDetailPageTestMall" />
+        <class name="cn.okay.mallpcpagetest.parsmoudletest.HeadsetPageTestMall" />
+        <class name="cn.okay.mallpcpagetest.shopmoudle.OrderInformationPageTestMall" />
+        <class name="cn.okay.mallpcpagetest.shopmoudle.PayPageTestMall" />
+        <class name="cn.okay.mallpcpagetest.shopmoudle.ShopCarPageTestMall" />
+        <class name="cn.okay.mallpcpagetest.shopmoudle.MyOrderPageTestMall" />
     </classes>
 
 </test>

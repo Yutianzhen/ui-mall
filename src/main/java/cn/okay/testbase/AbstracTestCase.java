@@ -4,31 +4,21 @@ import cn.okay.tools.ConfigUtil;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Parameters;
+
 import java.util.concurrent.TimeUnit;
 
 /**
- * Created by yutz on 2018/4/8.
+ * Created by yutz on 2018/8/21.
  */
-public class AbstractTestCase {
+public class AbstracTestCase {
 
     public static WebDriver driver=null;
     private static String broswerType;
     private static int defaultTimeOut=30;
-    private String url;
 
-    @Parameters({"url"})
+
     @BeforeMethod(alwaysRun = true)
-    public void initDriver(String url) throws Exception {
-        System.out.println("----------------Start Test-----------------");
-//        url= ConfigUtil.getConfigUtil().getConfigFileContent("url");
-        System.out.println("Current Driver is null : " + (driver == null));
-        driver = creatNewDriver();
-        driver.manage().timeouts().implicitlyWait(defaultTimeOut, TimeUnit.SECONDS);
-        driver.manage().window().maximize();
-        driver.get(url);
-    }
-
+    public void initDriver()throws Exception{}
     public static WebDriver creatNewDriver() throws Exception {
         if (driver == null) {
             synchronized (WebDriver.class) {
@@ -46,8 +36,7 @@ public class AbstractTestCase {
         driver.close();
         driver.quit();
         driver=null;
-        System.out.println("----------------End  Test------------------");
+        System.out.println("-------------------------End  Test---------------------------");
     }
-
 
 }

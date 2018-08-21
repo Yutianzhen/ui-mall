@@ -7,13 +7,13 @@ import cn.okay.page.okaymall.partsmoudle.PartsClassificationPage;
 import cn.okay.page.okaymall.partsmoudle.PartsDetailPage;
 import cn.okay.page.okaymall.shopmoudle.OrderInformationPage;
 import cn.okay.page.okaymall.shopmoudle.ShopCarPage;
-import cn.okay.testbase.AbstractTestCase;
+import cn.okay.testbase.MallAbstractTestCase;
 import org.testng.annotations.Test;
 
 /**
  * Created by yutz on 2018/3/19.
  */
-public class OrderInformationPageTest extends AbstractTestCase {
+public class OrderInformationPageTestMall extends MallAbstractTestCase {
 
     @Test(testName = "OrderInformationPageTest1", description = "订单信息页删除一个收获地址", groups = "mall")
     public void deleteAddress() throws Exception {

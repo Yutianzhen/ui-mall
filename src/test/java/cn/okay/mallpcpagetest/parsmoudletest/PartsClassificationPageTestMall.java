@@ -2,12 +2,12 @@ package cn.okay.mallpcpagetest.parsmoudletest;
 
 import cn.okay.page.okaymall.loginbefore.MallHomePage;
 import cn.okay.page.okaymall.partsmoudle.*;
-import cn.okay.testbase.AbstractTestCase;
+import cn.okay.testbase.MallAbstractTestCase;
 import org.testng.annotations.Test;
 /**
  * Created by yutz on 2018/3/6.
  */
-public class PartsClassificationPageTest extends AbstractTestCase {
+public class PartsClassificationPageTestMall extends MallAbstractTestCase {
 
     @Test(testName = "PartsClass1",description = "进入手写笔系列页面",groups = "mall")
     public void goHandwritingPenPage() throws Exception {

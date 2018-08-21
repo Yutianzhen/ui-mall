@@ -4,13 +4,14 @@ import cn.okay.page.officialwebsite.OffciaHomePage;
 import cn.okay.page.officialwebsite.fourthpage.FourthPage;
 import cn.okay.page.officialwebsite.secondpage.ParentPage;
 import cn.okay.page.officialwebsite.thirdpage.ParentThirdPage;
-import cn.okay.testbase.AbstractTestCase;
+import cn.okay.testbase.MallAbstractTestCase;
+import cn.okay.testbase.OffcialAbstracTestCase;
 import org.testng.annotations.Test;
 
 /**
  * Created by yutz on 2018/2/5.
  */
-public class FourthPageTest extends AbstractTestCase {
+public class FourthPageTestMall extends OffcialAbstracTestCase {
 
     @Test(testName = "FourthPageTest1",description = "点击推荐文章的第一篇文章",groups = "offcial")
     public void clickFirstRecommendMoudleToOtherRecommend() throws Exception {

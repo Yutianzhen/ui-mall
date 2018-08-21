@@ -1,16 +1,19 @@
 package cn.okay.officialwebsitetest.secondpagetest;
 
-import cn.okay.testbase.AbstractTestCase;
+import cn.okay.testbase.MallAbstractTestCase;
+import cn.okay.testbase.OffcialAbstracTestCase;
 import org.testng.annotations.Test;
 import cn.okay.page.officialwebsite.OffciaHomePage;
 import cn.okay.page.officialwebsite.secondpage.*;
 
+import static cn.okay.testbase.AbstracTestCase.driver;
+
 /**
  * Created by yutz on 2018/1/24.
  */
-public class HomeToSecondPageTest extends AbstractTestCase {
+public class HomeToSecondPageTestMall extends OffcialAbstracTestCase {
 
-    @Test(testName = "homePage1",description = "首页进入公司简介页",groups = "offcial2")
+    @Test(testName = "homePage1",description = "首页进入公司简介页",groups = "offcial")
     public void homePageToProfilePage() throws Exception {
         OffciaHomePage offciaHomePage =new OffciaHomePage(driver);
         CompanyProfilePage companyProfilePage= offciaHomePage.clickToCompanyProfilePage();

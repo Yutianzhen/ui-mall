@@ -3,14 +3,17 @@ package cn.okay.officialwebsitetest.secondpagetest;
 import cn.okay.page.officialwebsite.OffciaHomePage;
 import cn.okay.page.officialwebsite.secondpage.TrainingInstitutionDetailPage;
 import cn.okay.page.officialwebsite.secondpage.TrainingInstitutionPage;
-import cn.okay.testbase.AbstractTestCase;
+import cn.okay.testbase.MallAbstractTestCase;
+import cn.okay.testbase.OffcialAbstracTestCase;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
+
+import static cn.okay.testbase.AbstracTestCase.driver;
 
 /**
  * Created by yutz on 2018/2/2.
  */
-public class TrainingInstitutionPageTest extends AbstractTestCase {
+public class TrainingInstitutionPageTestMall extends OffcialAbstracTestCase {
 
     @Test(testName = "TrainingInstitutionPage1",description = "机构页点击OKAY优势按钮",groups = "offcial")
     public void clickoOkayAdvantageBtn() throws Exception {

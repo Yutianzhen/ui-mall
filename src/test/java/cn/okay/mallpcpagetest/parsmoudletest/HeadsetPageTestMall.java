@@ -1,6 +1,6 @@
 package cn.okay.mallpcpagetest.parsmoudletest;
 
-import cn.okay.testbase.AbstractTestCase;
+import cn.okay.testbase.MallAbstractTestCase;
 import org.testng.annotations.Test;
 import cn.okay.page.okaymall.loginbefore.MallHomePage;
 import cn.okay.page.okaymall.partsmoudle.HeadsetPage;
@@ -11,7 +11,7 @@ import cn.okay.page.okaymall.partsmoudle.PartsDetailPage;
 /**
  * Created by yutz on 2018/3/8.
  */
-public class HeadsetPageTest extends AbstractTestCase {
+public class HeadsetPageTestMall extends MallAbstractTestCase {
 
     @Test(testName = "HeadsetPageTest1",description = "耳机详情页点击导航返回配件类别页",groups = "mall")
     public void clickGoPartsClassPage() throws Exception {

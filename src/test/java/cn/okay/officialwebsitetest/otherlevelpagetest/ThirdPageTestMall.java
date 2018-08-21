@@ -1,16 +1,19 @@
 package cn.okay.officialwebsitetest.otherlevelpagetest;
 
-import cn.okay.testbase.AbstractTestCase;
+import cn.okay.testbase.MallAbstractTestCase;
+import cn.okay.testbase.OffcialAbstracTestCase;
 import org.testng.annotations.Test;
 import cn.okay.page.officialwebsite.OffciaHomePage;
 import cn.okay.page.officialwebsite.fourthpage.FourthPage;
 import cn.okay.page.officialwebsite.secondpage.ParentPage;
 import cn.okay.page.officialwebsite.thirdpage.ParentThirdPage;
 
+import static cn.okay.testbase.AbstracTestCase.driver;
+
 /**
  * Created by yutz on 2018/2/5.
  */
-public class ThirdPageTest extends AbstractTestCase {
+public class ThirdPageTestMall extends OffcialAbstracTestCase {
 
     @Test(testName = "ThirdPageTest1",description = "二级页面进入三级页",groups = "offcial")
     public void jionThirdPage() throws Exception {

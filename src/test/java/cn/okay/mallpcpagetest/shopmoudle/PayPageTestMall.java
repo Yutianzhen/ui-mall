@@ -6,13 +6,13 @@ import cn.okay.page.okaymall.partsmoudle.HeadsetPage;
 import cn.okay.page.okaymall.partsmoudle.PartsClassificationPage;
 import cn.okay.page.okaymall.partsmoudle.PartsDetailPage;
 import cn.okay.page.okaymall.shopmoudle.*;
-import cn.okay.testbase.AbstractTestCase;
+import cn.okay.testbase.MallAbstractTestCase;
 import org.testng.annotations.Test;
 
 /**
  * Created by yutz on 2018/3/30.
  */
-public class PayPageTest extends AbstractTestCase {
+public class PayPageTestMall extends MallAbstractTestCase {
 
     @Test(testName = "PayPageTest1", description = "选择支付宝支付", groups = "mall")
     public void seletAplipayTest() throws Exception {

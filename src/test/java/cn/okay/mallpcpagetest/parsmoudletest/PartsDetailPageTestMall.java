@@ -6,13 +6,13 @@ import cn.okay.page.okaymall.partsmoudle.HeadsetPage;
 import cn.okay.page.okaymall.partsmoudle.PartsClassificationPage;
 import cn.okay.page.okaymall.partsmoudle.PartsDetailPage;
 import cn.okay.page.okaymall.shopmoudle.ShopCarPage;
-import cn.okay.testbase.AbstractTestCase;
+import cn.okay.testbase.MallAbstractTestCase;
 import org.testng.annotations.Test;
 
 /**
  * Created by yutz on 2018/3/12.
  */
-public class PartsDetailPageTest extends AbstractTestCase {
+public class PartsDetailPageTestMall extends MallAbstractTestCase {
 
     @Test(testName = "PartsDetailPage1", description = "登录前进入商品详情页商品加入购物车", groups = "mall")
     public void joinShopCar() throws Exception {
