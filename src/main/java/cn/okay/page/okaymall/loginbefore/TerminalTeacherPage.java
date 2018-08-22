@@ -7,6 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 /**
  * Created by yutz on 2018/2/28.
+ * OKAY智能终端的教师端页面
  */
 public class TerminalTeacherPage extends AbstractPage {
 

@@ -12,6 +12,7 @@ import org.testng.Assert;
 
 /**
  * Created by yutz on 2018/3/8.
+ * 配件详细信息页
  */
 public class PartsDetailPage extends AbstractPage {
 

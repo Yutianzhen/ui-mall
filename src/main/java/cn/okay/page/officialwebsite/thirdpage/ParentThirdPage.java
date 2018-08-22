@@ -11,6 +11,7 @@ import org.openqa.selenium.support.FindBy;
 
 /**
  * Created by yutz on 2018/4/9.
+ * 家长的三级页
  */
 public class ParentThirdPage extends AbstractPage {
 

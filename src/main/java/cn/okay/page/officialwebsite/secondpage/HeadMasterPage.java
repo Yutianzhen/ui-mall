@@ -8,6 +8,7 @@ import org.openqa.selenium.support.FindBy;
 
 /**
  * Created by yutz on 2018/1/24.
+ * 中小学校长的二级页
  */
 public class HeadMasterPage extends AbstractPage {
 

@@ -8,6 +8,7 @@ import org.openqa.selenium.support.FindBy;
 
 /**
  * Created by yutz on 2018/2/1.
+ * 教育部门领导的二级页
  */
 public class EducationDepartmentPage extends AbstractPage {
 

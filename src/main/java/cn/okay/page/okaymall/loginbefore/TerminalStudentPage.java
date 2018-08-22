@@ -8,6 +8,7 @@ import org.openqa.selenium.support.FindBy;
 
 /**
  * Created by yutz on 2018/2/28.
+ * OKAY智能终端的学生端页面
  */
 public class TerminalStudentPage extends AbstractPage {
 

@@ -14,7 +14,7 @@ import org.testng.annotations.Test;
  */
 public class PayPageTestMall extends MallAbstractTestCase {
 
-    @Test(testName = "PayPageTest1", description = "选择支付宝支付", groups = "mall")
+    @Test(testName = "PayPageTest1", description = "提交订单后在支付页选择支付宝支付", groups = "mall")
     public void seletAplipayTest() throws Exception {
         LoginToolMallPage loginToolMallPage=new LoginToolMallPage(driver);
         MallHomePage mallHomePage=loginToolMallPage.login();
@@ -27,7 +27,7 @@ public class PayPageTestMall extends MallAbstractTestCase {
         AlipaySurePage alipaySurePage=payPage.selectAlipay();
     }
 
-    @Test(testName = "PayPageTest2", description = "选择微信支付但是未付款", groups = "mall")
+    @Test(testName = "PayPageTest2", description = "提交订单后在支付页选择微信支付但是未付款", groups = "mall")
     public void seletWechatPayTest() throws Exception {
         LoginToolMallPage loginToolMallPage=new LoginToolMallPage(driver);
         MallHomePage mallHomePage=loginToolMallPage.login();
@@ -41,7 +41,7 @@ public class PayPageTestMall extends MallAbstractTestCase {
         MyOrderPage myOrderPage=payWaitPage.clickSeeMyOrder();
     }
 
-    @Test(testName = "PayPageTest3", description = "选择银行汇款支付", groups = "mall")
+    @Test(testName = "PayPageTest3", description = "提交订单后在支付页选择银行汇款支付", groups = "mall")
     public void seletBankRemittanceyTest() throws Exception {
         LoginToolMallPage loginToolMallPage=new LoginToolMallPage(driver);
         MallHomePage mallHomePage=loginToolMallPage.login();

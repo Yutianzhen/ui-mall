@@ -7,6 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 /**
  * Created by yutz on 2018/3/19.
+ * 支付页
  */
 public class PayPage extends AbstractPage {
 

@@ -12,6 +12,7 @@ import java.util.List;
 
 /**
  * Created by yutz on 2018/3/14.
+ * 订单信息页，也就是填写订单地址的页面
  */
 public class OrderInformationPage extends AbstractPage {
 

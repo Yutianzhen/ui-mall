@@ -8,6 +8,7 @@ import org.openqa.selenium.support.FindBy;
 
 /**
  * Created by yutz on 2017/10/17.
+ * 公司简介页
  */
 public class CompanyProfilePage extends AbstractPage {
 

@@ -28,22 +28,33 @@ public class ShopCarPageTestMall extends MallAbstractTestCase {
     public void deleteFirstCommodity() throws Exception {
         LoginToolMallPage loginToolMallPage=new LoginToolMallPage(driver);
         MallHomePage mallHomePage=loginToolMallPage.login();
-        PartsClassificationPage pcp=mallHomePage.clickPartsLink();
-        HeadsetPage headsetPage=pcp.clickToHeadsetPage();
-        PartsDetailPage partsDetailPage=headsetPage.clickFirstParts();
-        ShopCarPage shopCarPage=partsDetailPage.clickJionShopCar();
-        shopCarPage.deleteFirstCommodity();
+        if (mallHomePage.shopCarNoNull()) {
+            ShopCarPage shopCarPage=mallHomePage.homePageToShopPage();
+            shopCarPage.deleteFirstCommodity();
+        }else {
+            PartsClassificationPage pcp = mallHomePage.clickPartsLink();
+            HeadsetPage headsetPage = pcp.clickToHeadsetPage();
+            PartsDetailPage partsDetailPage = headsetPage.clickFirstParts();
+            ShopCarPage shopCarPage = partsDetailPage.clickJionShopCar();
+            shopCarPage.deleteFirstCommodity();
+        }
     }
 
     @Test(testName = "ShopCarPageTest3",description = "设置第一个商品的商品数量为2",groups = "mall")
     public void inputFirstCommodityCount() throws Exception {
         LoginToolMallPage loginToolMallPage = new LoginToolMallPage(driver);
         MallHomePage mallHomePage = loginToolMallPage.login();
-        PartsClassificationPage pcp = mallHomePage.clickPartsLink();
-        HeadsetPage headsetPage = pcp.clickToHeadsetPage();
-        PartsDetailPage partsDetailPage = headsetPage.clickFirstParts();
-        ShopCarPage shopCarPage = partsDetailPage.clickJionShopCar();
-        shopCarPage.inputFirstCount();
+        if (mallHomePage.shopCarNoNull()) {
+            ShopCarPage shopCarPage=mallHomePage.homePageToShopPage();
+            shopCarPage.inputFirstCount();
+        }
+        else{
+            PartsClassificationPage pcp = mallHomePage.clickPartsLink();
+            HeadsetPage headsetPage = pcp.clickToHeadsetPage();
+            PartsDetailPage partsDetailPage = headsetPage.clickFirstParts();
+            ShopCarPage shopCarPage = partsDetailPage.clickJionShopCar();
+            shopCarPage.inputFirstCount();
+        }
     }
 
 }

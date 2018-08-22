@@ -10,6 +10,7 @@ import org.testng.Assert;
 
 /**
  * Created by yutz on 2018/3/2.
+ *耳机系列页面
  */
 public class HeadsetPage extends AbstractPage {
 

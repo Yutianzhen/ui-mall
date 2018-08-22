@@ -8,6 +8,7 @@ import org.openqa.selenium.support.FindBy;
 
 /**
  * Created by yutz on 2018/2/28.
+ * 远程智能教学页
  */
 public class DistanceTeachingPage extends AbstractPage {
 

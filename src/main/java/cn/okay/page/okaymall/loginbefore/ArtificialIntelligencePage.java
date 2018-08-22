@@ -8,6 +8,7 @@ import org.openqa.selenium.support.FindBy;
 
 /**
  * Created by yutz on 2018/2/28.
+ *人工智能实时指导也页
  */
 public class ArtificialIntelligencePage extends AbstractPage {
 

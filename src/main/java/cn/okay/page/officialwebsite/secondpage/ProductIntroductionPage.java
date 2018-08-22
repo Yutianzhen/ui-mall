@@ -8,6 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 /**
  * Created by yutz on 2018/2/1.
+ * 产品介绍的四级页
  */
 public class ProductIntroductionPage extends AbstractPage {
 

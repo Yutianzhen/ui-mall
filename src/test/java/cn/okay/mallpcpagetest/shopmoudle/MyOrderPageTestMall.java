@@ -11,10 +11,11 @@ import org.testng.annotations.Test;
 
 /**
  * Created by yutz on 2018/4/10.
+ * 我的订单页
  */
 public class MyOrderPageTestMall extends MallAbstractTestCase {
 
-    @Test(testName = "MyOrderPageTest1", description = "鼠标滑过第一个订单详情连接，出现订单详情介绍", groups = "mall")
+    @Test(testName = "MyOrderPageTest1", description = "鼠标滑过第一个订单详情链接，出现订单详情介绍", groups = "mall")
     public void MoveToFirstDetaliLink() throws Exception {
         LoginToolMallPage loginToolMallPage=new LoginToolMallPage(driver);
         MallHomePage mallHomePage=loginToolMallPage.login();
@@ -26,6 +27,7 @@ public class MyOrderPageTestMall extends MallAbstractTestCase {
     public void cancelOrder() throws Exception {
         LoginToolMallPage loginToolMallPage=new LoginToolMallPage(driver);
         MallHomePage mallHomePage=loginToolMallPage.login();
+        /**  此处是为了防止没有取消订单按钮 进行的进入首页后从下单到进入我的订单页的流程
         PartsClassificationPage pcp=mallHomePage.clickPartsLink();
         HeadsetPage headsetPage=pcp.clickToHeadsetPage();
         PartsDetailPage partsDetailPage=headsetPage.clickFirstParts();
@@ -34,6 +36,9 @@ public class MyOrderPageTestMall extends MallAbstractTestCase {
         PayPage payPage=orderInformationPage.clickToPayPage();
         PayWaitPage payWaitPage=payPage.selectBankRemittance();
         MyOrderPage myOrderPage=payWaitPage.clickSeeMyOrder();
+        myOrderPage.cancelOrder();
+         */
+        MyOrderPage myOrderPage=mallHomePage.homePageToMyOrderPage();
         myOrderPage.cancelOrder();
     }
 

@@ -8,6 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 /**
  * Created by yutz on 2018/2/1.
+ * 培训机构的机构二级页
  */
 public class TrainingInstitutionPage extends AbstractPage {
 

@@ -8,6 +8,7 @@ import org.openqa.selenium.support.FindBy;
 
 /**
  * Created by yutz on 2018/3/2.
+ * 笔芯系列页面
  */
 public class RefillPage extends AbstractPage {
 

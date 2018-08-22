@@ -14,6 +14,7 @@ import org.testng.Assert;
 
 /**
  * Created by yutz on 2018/2/28.
+ * 商城首页
  */
 public class MallHomePage extends AbstractPage {
 
@@ -116,6 +117,17 @@ public class MallHomePage extends AbstractPage {
 
     public ShopCarPage homePageToShopPage() throws Exception {
         return click(shopCarBtn,ShopCarPage.class);
+    }
+
+    //在购物车非空时，标记购物车数字的元素才会出现并且返回true，否则就返回false
+    public boolean shopCarNoNull(){
+       try {
+           driver.findElement(By.cssSelector("span[class='goods-amount goods-amount-p']"));
+           return true;
+       }
+       catch (Exception e){
+        return false;
+       }
     }
 
     public MyOrderPage homePageToMyOrderPage() throws Exception {

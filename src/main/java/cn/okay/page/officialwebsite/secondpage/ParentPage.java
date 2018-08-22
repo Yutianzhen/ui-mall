@@ -10,6 +10,7 @@ import org.openqa.selenium.support.FindBy;
 
 /**
  * Created by yutz on 2018/2/1.
+ * 家长的二级页
  */
 public class ParentPage extends AbstractPage {
 

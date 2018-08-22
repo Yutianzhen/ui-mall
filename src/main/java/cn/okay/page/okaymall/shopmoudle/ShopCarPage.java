@@ -10,6 +10,7 @@ import org.testng.Assert;
 
 /**
  * Created by yutz on 2018/3/12.
+ * 购物车页面
  */
 public class ShopCarPage extends AbstractPage {
 

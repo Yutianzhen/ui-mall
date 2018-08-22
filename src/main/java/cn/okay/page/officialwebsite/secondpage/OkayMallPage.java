@@ -8,6 +8,7 @@ import org.openqa.selenium.support.FindBy;
 
 /**
  * Created by yutz on 2018/2/1.
+ * 商城首页
  */
 public class OkayMallPage extends AbstractPage {
 

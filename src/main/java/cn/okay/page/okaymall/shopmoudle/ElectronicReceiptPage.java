@@ -8,6 +8,7 @@ import org.openqa.selenium.support.FindBy;
 
 /**
  * Created by yutz on 2018/4/10.
+ * 电子收据页面
  */
 public class ElectronicReceiptPage extends AbstractPage {
 

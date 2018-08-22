@@ -8,6 +8,7 @@ import org.openqa.selenium.support.FindBy;
 
 /**
  * Created by yutz on 2018/3/30.
+ * 选择支付宝支付后的支付宝扫码页面
  */
 public class AlipaySurePage extends AbstractPage {
 

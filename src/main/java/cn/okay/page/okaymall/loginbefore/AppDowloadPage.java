@@ -8,6 +8,7 @@ import org.openqa.selenium.support.FindBy;
 
 /**
  * Created by yutz on 2018/2/28.
+ * APP下载页
  */
 public class AppDowloadPage extends AbstractPage {
 

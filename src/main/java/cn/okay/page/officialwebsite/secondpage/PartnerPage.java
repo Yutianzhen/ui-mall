@@ -7,6 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 /**
  * Created by yutz on 2018/2/1.
+ * 合作伙伴的二级页
  */
 public class PartnerPage extends AbstractPage {
 

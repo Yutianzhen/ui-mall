@@ -8,6 +8,7 @@ import org.openqa.selenium.WebElement;
 
 /**
  * Created by yutz on 2018/3/30.
+ * 支付订单页
  */
 public class PayWaitPage extends AbstractPage {
 

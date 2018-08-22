@@ -10,6 +10,7 @@ import org.testng.Assert;
 
 /**
  * Created by yutz on 2018/2/28.
+ * 配件类别页
  */
 public class PartsClassificationPage extends AbstractPage {
 

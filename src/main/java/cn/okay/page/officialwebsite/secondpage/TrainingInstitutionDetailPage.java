@@ -8,6 +8,7 @@ import org.openqa.selenium.support.FindBy;
 
 /**
  * Created by yutz on 2018/2/5.
+ *培训机构的机构详情页
  */
 public class TrainingInstitutionDetailPage extends AbstractPage {
 

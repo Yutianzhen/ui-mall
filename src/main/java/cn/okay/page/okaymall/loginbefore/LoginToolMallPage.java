@@ -10,6 +10,7 @@ import org.testng.Assert;
 
 /**
  * Created by yutz on 2018/2/27.
+ * 登录的弹框页
  */
 public class LoginToolMallPage extends AbstractPage{
 

@@ -11,6 +11,7 @@ import org.testng.annotations.Test;
 
 /**
  * Created by yutz on 2018/2/27.
+ * 商城的登录模块测试
  */
 public class MallLoginTestMall extends MallAbstractTestCase {
 

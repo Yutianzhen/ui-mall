@@ -9,6 +9,7 @@ import org.openqa.selenium.support.FindBy;
 
 /**
  * Created by yutz on 2018/3/2.
+ * 保护套系列页面
  */
 public class SmartCoverPage extends AbstractPage {
 
