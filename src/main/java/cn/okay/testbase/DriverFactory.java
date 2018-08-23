@@ -31,8 +31,10 @@ public class DriverFactory {
             //此处读取的是当前工作目录的路径，加上项目里的路径，但是在Jenkins中编译时会提示找不到该路径，故把driver设置成了读取固定C盘位置
      //     System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\src\\main\\resources\\chromedriver.exe");
             //此处设置读取C盘位置的driver，是为了解决Jenkins中找不到driiver路径的问题
-            System.setProperty("webdriver.chrome.driver","C:\\chromedriver.exe");
+           // System.setProperty("webdriver.chrome.driver","C:\\chromedriver.exe");
+            System.setProperty("webdriver.chrome.driver","/xdfapp/autotest/tools/chromedriver");
             ChromeOptions options=new ChromeOptions();
+            options.setHeadless(true);
             options.addArguments("test-type");
             options.addArguments("disable-popup-blocking");
             options.addArguments("--test-type", "--ignore-certificate-errors");
