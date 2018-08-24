@@ -100,9 +100,6 @@
                     <suiteXmlFiles>
                         <!-- 这里是testng的测试文件配置 -->
                         <file>testng.xml</file>
-                        <!-- 这里是商城的测试文件配置
-                        <file>testngmall.xml</file>
-                        -->
                     </suiteXmlFiles>
                     <workingDirectory>target/</workingDirectory>
                 </configuration>
