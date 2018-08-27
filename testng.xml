@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
         <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Offcia Suite">
-<test name=" offcia test">
+<suite name="UI Test Suite">
+<test name="UI test">
     <!--  此处是传入的官网地址的参数 -->
     <parameter name="url" value="https://www.okayzhihui.com" />
 
