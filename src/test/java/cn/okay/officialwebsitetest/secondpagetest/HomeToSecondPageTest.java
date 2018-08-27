@@ -1,17 +1,25 @@
 package cn.okay.officialwebsitetest.secondpagetest;
 
+import cn.okay.page.officialwebsite.fourthpage.FourthPage;
+import cn.okay.page.officialwebsite.fourthpage.NewestNewDetailedPage;
+import cn.okay.page.officialwebsite.thirdpage.ThirdPage;
+import cn.okay.page.okaymall.loginbefore.AppDowloadPage;
 import cn.okay.testbase.MallAbstractTestCase;
 import cn.okay.testbase.OffcialAbstracTestCase;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import cn.okay.page.officialwebsite.OffciaHomePage;
 import cn.okay.page.officialwebsite.secondpage.*;
+
+import java.util.concurrent.ForkJoinPool;
 
 import static cn.okay.testbase.AbstracTestCase.driver;
 
 /**
  * Created by yutz on 2018/1/24.
+ * 这是官网首页进行一系列操作的用例
  */
-public class HomeToSecondPageTestMall extends OffcialAbstracTestCase {
+public class HomeToSecondPageTest extends OffcialAbstracTestCase {
 
     @Test(testName = "homePage1",description = "首页进入公司简介页",groups = "offcial")
     public void homePageToProfilePage() throws Exception {
@@ -77,5 +85,35 @@ public class HomeToSecondPageTestMall extends OffcialAbstracTestCase {
     public void homePageMouseHoverWechatTest(){
         OffciaHomePage offciaHomePage =new OffciaHomePage(driver);
         offciaHomePage.mouseHoverWechat();
+    }
+
+    @Test(testName = "homePage12",description = "鼠标停留在网站地图时，唤起网站地图的角色入口选择框",groups = "offcial")
+    public void mouseWebMapTest(){
+        OffciaHomePage offciaHomePage=new OffciaHomePage(driver);
+        offciaHomePage.mouseWebMap();
+    }
+    @Test(testName = "homePage13",description = "首页点击OKAY动态，进入OKAY智慧教育高峰论坛三级页",groups = "offcial")
+    public void homePageToOkayEduPageTest(){
+        OffciaHomePage offciaHomePage=new OffciaHomePage(driver);
+        ThirdPage thirdPage=offciaHomePage.clickToOkayEeuPage();
+        Assert.assertTrue(driver.getTitle().contains("OKAY智慧教育高峰论坛"));
+    }
+
+    @Test(testName = "homePage14",description = "首页点击下载专区，进入APP下载页",groups = "offcial")
+    public void homePageToAppDowloadPageTest(){
+        OffciaHomePage offciaHomePage=new OffciaHomePage(driver);
+        AppDowloadPage appDowloadPage= offciaHomePage.clickToAppDowloadPage();
+    }
+
+    @Test(testName = "homePage15",description = "点击新闻资讯中第一条新闻，进入文章详情页",groups = "offcial")
+    public void clickFirstNewToFourthPageTest(){
+        OffciaHomePage offciaHomePage=new OffciaHomePage(driver);
+        NewestNewDetailedPage fourthPage=offciaHomePage.clickToNewestNewDFourthPage();
+    }
+
+    @Test(testName = "homePage16",description = "点击当前正在轮播的banner图，进入四级页",groups = "offcial")
+    public void ckickBannerLinkTest(){
+        OffciaHomePage offciaHomePage=new OffciaHomePage(driver);
+        FourthPage fourthPage=offciaHomePage.clickBannerToFourthPage();
     }
 }

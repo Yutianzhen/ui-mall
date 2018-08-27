@@ -13,7 +13,7 @@ import static cn.okay.testbase.AbstracTestCase.driver;
 /**
  * Created by yutz on 2018/2/2.
  */
-public class TrainingInstitutionPageTestMall extends OffcialAbstracTestCase {
+public class TrainingInstitutionPageTest extends OffcialAbstracTestCase {
 
     @Test(testName = "TrainingInstitutionPage1",description = "机构页点击OKAY优势按钮",groups = "offcial")
     public void clickoOkayAdvantageBtn() throws Exception {

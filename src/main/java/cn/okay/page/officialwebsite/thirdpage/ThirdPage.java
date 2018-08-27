@@ -11,9 +11,9 @@ import org.openqa.selenium.support.FindBy;
 
 /**
  * Created by yutz on 2018/4/9.
- * 家长的三级页
+ * 这里是的三级页
  */
-public class ParentThirdPage extends AbstractPage {
+public class ThirdPage extends AbstractPage {
 
     @FindBy(css="#nav")
     WebElement barBtn;
@@ -30,7 +30,7 @@ public class ParentThirdPage extends AbstractPage {
     //文章列表里的第一个文章
     WebElement articleList=driver.findElements(By.cssSelector(".pic-list li a")).get(0);
 
-    public ParentThirdPage(WebDriver driver) {
+    public ThirdPage(WebDriver driver) {
         super(driver);
         WaitTool.waitFor(driver,WaitTool.DEFAULT_WAIT_4_ELEMENT,barBtn);
     }
@@ -44,8 +44,8 @@ public class ParentThirdPage extends AbstractPage {
         return new FourthPage(driver);
     }
 
-    public ParentThirdPage clickOtherRecommendThemeMoudle() throws Exception {
-        return click(recommendThemeMoudle,ParentThirdPage.class);
+    public ThirdPage clickOtherRecommendThemeMoudle() throws Exception {
+        return click(recommendThemeMoudle,ThirdPage.class);
     }
 
     //点击文章列表里第一篇文章,鼠标悬停文章出现
@@ -54,5 +54,6 @@ public class ParentThirdPage extends AbstractPage {
         clickAndSwitchWindow(articleList);
         return new FourthPage(driver);
     }
+
 }
 

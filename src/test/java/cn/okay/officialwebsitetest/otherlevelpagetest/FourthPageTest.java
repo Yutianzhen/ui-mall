@@ -3,22 +3,21 @@ package cn.okay.officialwebsitetest.otherlevelpagetest;
 import cn.okay.page.officialwebsite.OffciaHomePage;
 import cn.okay.page.officialwebsite.fourthpage.FourthPage;
 import cn.okay.page.officialwebsite.secondpage.ParentPage;
-import cn.okay.page.officialwebsite.thirdpage.ParentThirdPage;
-import cn.okay.testbase.MallAbstractTestCase;
+import cn.okay.page.officialwebsite.thirdpage.ThirdPage;
 import cn.okay.testbase.OffcialAbstracTestCase;
 import org.testng.annotations.Test;
 
 /**
  * Created by yutz on 2018/2/5.
  */
-public class FourthPageTestMall extends OffcialAbstracTestCase {
+public class FourthPageTest extends OffcialAbstracTestCase {
 
     @Test(testName = "FourthPageTest1",description = "点击推荐文章的第一篇文章",groups = "offcial")
     public void clickFirstRecommendMoudleToOtherRecommend() throws Exception {
         OffciaHomePage offciaHomePage =new OffciaHomePage(driver);
         ParentPage parentPage= offciaHomePage.clickToParentPage();
-        ParentThirdPage parentThirdPage=parentPage.clickToThirdPage();
-        FourthPage fourthPage=parentThirdPage.clickArticleListFirst();
+        ThirdPage thirdPage =parentPage.clickToThirdPage();
+        FourthPage fourthPage= thirdPage.clickArticleListFirst();
         fourthPage=fourthPage.clickFirstRecommendMoudle();
     }
 
@@ -26,8 +25,8 @@ public class FourthPageTestMall extends OffcialAbstracTestCase {
     public void clickFirstBarToHomePage() throws Exception {
         OffciaHomePage offciaHomePage =new OffciaHomePage(driver);
         ParentPage parentPage= offciaHomePage.clickToParentPage();
-        ParentThirdPage parentThirdPage=parentPage.clickToThirdPage();
-        FourthPage fourthPage=parentThirdPage.clickBannerImgToFourthPage();
+        ThirdPage thirdPage =parentPage.clickToThirdPage();
+        FourthPage fourthPage= thirdPage.clickBannerImgToFourthPage();
         offciaHomePage =fourthPage.clickFirstBarBtnToHomePage();
     }
 
@@ -35,8 +34,8 @@ public class FourthPageTestMall extends OffcialAbstracTestCase {
     public void clickToPageTop() throws Exception {
         OffciaHomePage offciaHomePage =new OffciaHomePage(driver);
         ParentPage parentPage= offciaHomePage.clickToParentPage();
-        ParentThirdPage parentThirdPage=parentPage.clickToThirdPage();
-        FourthPage fourthPage=parentThirdPage.clickBannerImgToFourthPage();
+        ThirdPage thirdPage =parentPage.clickToThirdPage();
+        FourthPage fourthPage= thirdPage.clickBannerImgToFourthPage();
         fourthPage.clickToPageTop();
     }
 

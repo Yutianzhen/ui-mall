@@ -1,7 +1,7 @@
 package cn.okay.page.officialwebsite.secondpage;
 
 import cn.okay.page.officialwebsite.OffciaHomePage;
-import cn.okay.page.officialwebsite.thirdpage.ParentThirdPage;
+import cn.okay.page.officialwebsite.thirdpage.ThirdPage;
 import cn.okay.testbase.AbstractPage;
 import cn.okay.tools.WaitTool;
 import org.openqa.selenium.WebDriver;
@@ -30,9 +30,9 @@ public class ParentPage extends AbstractPage {
         pageWait(4000);
     }
 
-    public ParentThirdPage clickToThirdPage(){
+    public ThirdPage clickToThirdPage(){
         clickAndSwitchWindow(firstModular);
-        return new ParentThirdPage(driver);
+        return new ThirdPage(driver);
     }
 
     public OffciaHomePage clickToHomePage() throws Exception {

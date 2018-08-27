@@ -8,8 +8,8 @@
     <groups>
         <run>
             <!--  商城的分组 -->
-            <include name="mall" />
 
+            <include name="mall" />
             <!-- 官网的分组 -->
             <include name="offcial" />
 
@@ -18,11 +18,11 @@
 
     <classes>
         <!-- 官网 -->
-        <class name="cn.okay.officialwebsitetest.secondpagetest.HomeToSecondPageTestMall"/>
-        <class name="cn.okay.officialwebsitetest.secondpagetest.ParentSecondPageTestMall"/>
-        <class name="cn.okay.officialwebsitetest.secondpagetest.TrainingInstitutionPageTestMall"/>
-        <class name="cn.okay.officialwebsitetest.otherlevelpagetest.ThirdPageTestMall"/>
-        <class name="cn.okay.officialwebsitetest.otherlevelpagetest.FourthPageTestMall"/>
+        <class name="cn.okay.officialwebsitetest.secondpagetest.HomeToSecondPageTest"/>
+        <class name="cn.okay.officialwebsitetest.secondpagetest.ParentSecondPageTest"/>
+        <class name="cn.okay.officialwebsitetest.secondpagetest.TrainingInstitutionPageTest"/>
+        <class name="cn.okay.officialwebsitetest.otherlevelpagetest.ThirdPageTest"/>
+        <class name="cn.okay.officialwebsitetest.otherlevelpagetest.FourthPageTest"/>
 
         <!-- 商城 -->
         <class name="cn.okay.mallpcpagetest.loginbeforetest.MallHomePageTestMall" />
