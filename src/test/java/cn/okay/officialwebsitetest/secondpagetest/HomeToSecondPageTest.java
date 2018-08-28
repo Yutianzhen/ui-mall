@@ -21,7 +21,7 @@ import static cn.okay.testbase.AbstracTestCase.driver;
  */
 public class HomeToSecondPageTest extends OffcialAbstracTestCase {
 
-    @Test(testName = "homePage1",description = "首页进入公司简介页",groups = "offcial")
+    @Test(testName = "homePage1",description = "首页进入公司简介页",groups = "offcial2")
     public void homePageToProfilePage() throws Exception {
         OffciaHomePage offciaHomePage =new OffciaHomePage(driver);
         CompanyProfilePage companyProfilePage= offciaHomePage.clickToCompanyProfilePage();
@@ -39,7 +39,7 @@ public class HomeToSecondPageTest extends OffcialAbstracTestCase {
         ProductIntroductionPage productIntroductionPage= offciaHomePage.clickToProductIntroductionPage();
     }
 
-    @Test(testName = "homePage4",description = "首页进入中小学校长页",groups = "offcial")
+    @Test(testName = "homePage4",description = "首页进入中小学校长页",groups = "offcial2")
     public void homePageToHeadmasterPage() throws Exception {
         OffciaHomePage offciaHomePage =new OffciaHomePage(driver);
         HeadMasterPage headMasterPage= offciaHomePage.clickToHeadmasterPage();
