@@ -13,7 +13,7 @@ import cn.okay.page.okaymall.shopmoudle.ShopCarPage;
  */
 public class MallHomePageTestMall extends MallAbstractTestCase {
 
-    @Test(testName = "mallHomePageTest1",description = "商城首页进入配件页",groups = "mall")
+    @Test(testName = "mallHomePageTest1",description = "商城首页进入配件页",groups = "mall2")
     public void clickPartsLink() throws Exception {
         MallHomePage mallHomePage=new MallHomePage(driver);
         PartsClassificationPage pc=mallHomePage.clickPartsLink();
