@@ -43,6 +43,13 @@
             <version>6.9.10</version>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/javax.mail/mail -->
+        <dependency>
+            <groupId>javax.mail</groupId>
+            <artifactId>mail</artifactId>
+            <version>1.4.7</version>
+        </dependency>
+
         <!--reportng 依赖-->
         <dependency>
             <groupId>org.uncommons</groupId>
@@ -94,7 +101,7 @@
                     <properties>
                         <property>
                             <name>usedefaultlisteners</name>
-                            <value>false</value>
+                            <value>true</value>
                         </property>
                         <property>
                             <!--使用reportng的 listener 生成测试报告-->
@@ -105,7 +112,6 @@
                     <testFailureIgnore>true</testFailureIgnore>
                     <!--指定需要测试的testng的配置文件的位置-->
                     <suiteXmlFiles>
-                        <!-- 这里是testng的测试文件配置 -->
                         <file>testng.xml</file>
                     </suiteXmlFiles>
                     <workingDirectory>target/</workingDirectory>

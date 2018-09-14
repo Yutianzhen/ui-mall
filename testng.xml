@@ -1,43 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
         <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="UI Test Suite">
-<test name="UI test">
-    <!--  此处是传入的官网地址的参数 -->
-    <parameter name="url" value="https://www.okayzhihui.com" />
 
     <groups>
         <run>
-            <!--  商城的分组 -->
-
+            <!--  商城的分组  -->
             <include name="mall" />
+
             <!-- 官网的分组 -->
             <include name="offcial" />
-
         </run>
     </groups>
 
-    <classes>
-        <!-- 官网 -->
-        <class name="cn.okay.officialwebsitetest.secondpagetest.HomeToSecondPageTest"/>
-        <class name="cn.okay.officialwebsitetest.secondpagetest.ParentSecondPageTest"/>
-        <class name="cn.okay.officialwebsitetest.secondpagetest.TrainingInstitutionPageTest"/>
-        <class name="cn.okay.officialwebsitetest.otherlevelpagetest.ThirdPageTest"/>
-        <class name="cn.okay.officialwebsitetest.otherlevelpagetest.FourthPageTest"/>
+    <test name="官网Web">
+        <classes>
+            <class name="cn.okay.officialwebsitetest.secondpagetest.HomeToSecondPageTest"/>
+            <class name="cn.okay.officialwebsitetest.secondpagetest.ParentSecondPageTest"/>
+            <class name="cn.okay.officialwebsitetest.secondpagetest.TrainingInstitutionPageTest"/>
+            <class name="cn.okay.officialwebsitetest.otherlevelpagetest.ThirdPageTest"/>
+            <class name="cn.okay.officialwebsitetest.otherlevelpagetest.FourthPageTest"/>
+        </classes>
+    </test>
 
-        <!-- 商城 -->
-        <class name="cn.okay.mallpcpagetest.loginbeforetest.MallHomePageTestMall" />
-        <class name="cn.okay.mallpcpagetest.loginbeforetest.MallLoginTestMall" />
-        <class name="cn.okay.mallpcpagetest.parsmoudletest.PartsClassificationPageTestMall" />
-        <class name="cn.okay.mallpcpagetest.parsmoudletest.PartsDetailPageTestMall" />
-        <class name="cn.okay.mallpcpagetest.parsmoudletest.HeadsetPageTestMall" />
-        <class name="cn.okay.mallpcpagetest.shopmoudle.OrderInformationPageTestMall" />
-        <class name="cn.okay.mallpcpagetest.shopmoudle.PayPageTestMall" />
-        <class name="cn.okay.mallpcpagetest.shopmoudle.ShopCarPageTestMall" />
-        <class name="cn.okay.mallpcpagetest.shopmoudle.MyOrderPageTestMall" />
-    </classes>
+    <test name="商城Web">
+        <classes>
+            <class name="cn.okay.mallpcpagetest.loginbeforetest.MallHomePageTestMall" />
+            <class name="cn.okay.mallpcpagetest.loginbeforetest.MallLoginTestMall" />
+            <class name="cn.okay.mallpcpagetest.parsmoudletest.PartsClassificationPageTestMall" />
+            <class name="cn.okay.mallpcpagetest.parsmoudletest.PartsDetailPageTestMall" />
+            <class name="cn.okay.mallpcpagetest.parsmoudletest.HeadsetPageTestMall" />
+            <class name="cn.okay.mallpcpagetest.shopmoudle.OrderInformationPageTestMall" />
+            <class name="cn.okay.mallpcpagetest.shopmoudle.PayPageTestMall" />
+            <class name="cn.okay.mallpcpagetest.shopmoudle.ShopCarPageTestMall" />
+            <class name="cn.okay.mallpcpagetest.shopmoudle.MyOrderPageTestMall" />
+        </classes>
+    </test>
 
-</test>
-<listeners>
+    <listeners>
     <listener class-name="org.uncommons.reportng.HTMLReporter" />
     <listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
     <listener class-name="cn.okay.tools.MyTestNGListener" />
