@@ -101,7 +101,7 @@
                     <properties>
                         <property>
                             <name>usedefaultlisteners</name>
-                            <value>false</value>
+                            <value>true</value>
                         </property>
                         <property>
                             <!--使用reportng的 listener 生成测试报告-->
