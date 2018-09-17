@@ -39,7 +39,7 @@ public class HomeToSecondPageTest extends OffcialAbstracTestCase {
         ProductIntroductionPage productIntroductionPage= offciaHomePage.clickToProductIntroductionPage();
     }
 
-    @Test(testName = "homePage4",description = "首页进入中小学校长页",groups = "offcial2")
+    @Test(testName = "homePage4",description = "首页进入中小学校长页",groups = "offcial")
     public void homePageToHeadmasterPage() throws Exception {
         OffciaHomePage offciaHomePage =new OffciaHomePage(driver);
         HeadMasterPage headMasterPage= offciaHomePage.clickToHeadmasterPage();
