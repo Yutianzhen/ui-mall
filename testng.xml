@@ -5,14 +5,14 @@
     <groups>
         <run>
             <!--  商城的分组  -->
-            <include name="mall2" />
+            <include name="mall" />
 
             <!-- 官网的分组 -->
-            <include name="offcial2" />
+            <include name="offcial" />
         </run>
     </groups>
 
-    <test name="官网Web">
+    <test name="Offcia Web">
         <classes>
             <class name="cn.okay.officialwebsitetest.secondpagetest.HomeToSecondPageTest"/>
             <class name="cn.okay.officialwebsitetest.secondpagetest.ParentSecondPageTest"/>
@@ -22,7 +22,7 @@
         </classes>
     </test>
 
-    <test name="商城Web">
+    <test name="Mall Web">
         <classes>
             <class name="cn.okay.mallpcpagetest.loginbeforetest.MallHomePageTestMall" />
             <class name="cn.okay.mallpcpagetest.loginbeforetest.MallLoginTestMall" />

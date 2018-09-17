@@ -12,7 +12,7 @@ import org.openqa.selenium.support.FindBy;
  */
 public class CompanyProfilePage extends AbstractPage {
 
-    @FindBy(id="nav2")
+    @FindBy(id="nav")
     public WebElement pageContent;
 
     public CompanyProfilePage(WebDriver driver) {
