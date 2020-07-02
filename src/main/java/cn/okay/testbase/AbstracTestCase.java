@@ -16,7 +16,7 @@ public class AbstracTestCase {
     private static String broswerType;
     private static int defaultTimeOut=30;
 
-
+//在@Test注解中加入了group属性时,@BeforeMethod修饰的方法会无法执行,原因是@Beforeclass不是@Test的那个组，如果使用alwaysRun=true方式，让其一定会运行
     @BeforeMethod(alwaysRun = true)
     public void initDriver()throws Exception{}
     public static WebDriver creatNewDriver() throws Exception {
